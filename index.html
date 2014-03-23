@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angry Flies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />   
+        <link href="assets/css/main.css" rel="stylesheet">
+        
+        <!-- Libraries -->
+        <script src="js/libs/phaser/phaser.min.js"></script>
+        
+        <!-- Game elements -->
+        <script src="js/game/elements/Player.js"></script>
+        <script src="js/game/elements/Enemy.js"></script>
+        
+        <!-- Game states -->
+        <script src="js/game/states/Boot.js"></script>
+        <script src="js/game/states/Preload.js"></script>
+        <script src="js/game/states/Play.js"></script>
+        <script src="js/game/states/Win.js"></script>
+        <script src="js/game/states/Loss.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="game"></div>
+        </div>
+        
+        <script>
+            (function() {
+                var game = new Phaser.Game(800, 640, Phaser.CANVAS, 'game');
+
+                game.state.add('Boot', GameVar.Boot);
+                game.state.add('Preload', GameVar.Preload);
+                game.state.add('Play', GameVar.Play);
+                game.state.add('Win', GameVar.Win);
+                game.state.add('Loss', GameVar.Loss);
+
+                game.state.start('Boot');
+            })();            
+        </script>
+    </body>
+</html>
