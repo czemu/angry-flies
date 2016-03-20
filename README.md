@@ -2,6 +2,10 @@
 
 It's my first, simple game which I created to learn Phaser framework.
 
+## Play it
+
+http://paweldymek.com/projects/angry-flies/
+
 ## Gameplay
 
 Your goal is to collect all the coins from the map and not get caught by flies although you can shot them. You will score 10 points for every collected coin and 100 points for every killed fly, however every shoted fireball costs you 50 points, so aim accurately to not lose points.
